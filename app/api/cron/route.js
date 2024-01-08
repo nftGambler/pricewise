@@ -58,7 +58,7 @@ export async function GET () {
 
                   const emailNotifType = getEmailNotifType(scrapedProduct, currentProduct)
                     
-                  if(emailNotifType && updatedProduct.user.length > 0) {
+                  if(emailNotifType && updatedProduct.users.length > 0) {
                     const productInfo = {
                         title: updatedProduct.title,
                         url: updatedProduct.url
